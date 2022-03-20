@@ -1,3 +1,5 @@
+This fork is used only for image builds
+
 # Cloudflare Tunnel client
 
 Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that proxies traffic from the Cloudflare network to your origins.
