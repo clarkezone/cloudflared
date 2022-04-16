@@ -1,7 +1,22 @@
+## 2022.4.0
+### Bug Fixes
+- `cloudflared tunnel run` no longer logs the Tunnel token or JSON credentials in clear text as those are the secret
+that allows to run the Tunnel.
+
+## 2022.3.4
+### New Features
+- It is now possible to retrieve the credentials that allow to run a Tunnel in case you forgot/lost them. This is
+achievable with: `cloudflared tunnel token --cred-file /path/to/file.json TUNNEL`. This new feature only works for
+Tunnels created with cloudflared version 2022.3.0 or more recent.
+
+### Bug Fixes
+- `cloudflared service install` now starts the underlying agent service on Linux operating system (similarly to the
+behaviour in Windows and MacOS).
+
 ## 2022.3.3
 ### Bug Fixes
 - `cloudflared service install` now starts the underlying agent service on Windows operating system (similarly to the
-behaviour in Linux and MacOS).
+behaviour in MacOS).
 
 ## 2022.3.1
 ### Bug Fixes

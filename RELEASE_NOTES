@@ -1,3 +1,32 @@
+2022.4.1
+- 2022-04-11 TUN-6035: Reduce buffer size when proxying data
+- 2022-04-11 TUN-6038: Reduce buffer size used for proxying data
+- 2022-04-11 TUN-6043: Allow UI-managed Tunnels to fallback from QUIC but warn about that
+- 2022-04-07 TUN-6000 add version argument to bump-formula-pr
+- 2022-04-06 TUN-5989: Add in-memory otlp exporter
+
+2022.4.0
+- 2022-04-01 TUN-5973: Add backoff for non-recoverable errors as well
+- 2022-04-05 TUN-5992: Use QUIC protocol for remotely managed tunnels when protocol is unspecified
+- 2022-04-06 Update Makefile
+- 2022-04-06 TUN-5995: Update prometheus to 1.12.1 to avoid vulnerabilities
+- 2022-04-07 TUN-5995: Force prometheus v1.12.1 usage
+- 2022-04-07 TUN-4130: cloudflared docker images now have a latest tag
+- 2022-03-30 TUN-5842: Fix flaky TestConcurrentUpdateAndRead by making sure resources are released
+- 2022-03-30 carrier: fix dropped errors
+- 2022-03-25 TUN-5959: tidy go.mod
+- 2022-03-25 TUN-5958: Fix release to homebrew core
+- 2022-03-28 TUN-5960: Do not log the tunnel token or json credentials
+- 2022-03-28 TUN-5956: Add timeout to session manager APIs
+
+2022.3.4
+- 2022-03-22 TUN-5918: Clean up text in cloudflared tunnel --help
+- 2022-03-22 TUN-5895 run brew bump-formula-pr on release
+- 2022-03-22 TUN-5915: New cloudflared command to allow to retrieve the token credentials for a Tunnel
+- 2022-03-24 TUN-5933: Better messaging to help user when installing service if it is already installed
+- 2022-03-25 TUN-5954: Start cloudflared service in Linux too similarly to other OSs
+- 2022-03-14 TUN-5869: Add configuration endpoint in metrics server
+
 2022.3.3
 - 2022-03-17 TUN-5893: Start windows service on install, stop on uninstall. Previously user had to manually start the service after running 'cloudflared tunnel install' and stop the service before running uninstall command.
 - 2022-03-17 Revert "CC-796: Remove dependency on unsupported version of go-oidc"
